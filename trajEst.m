@@ -8,7 +8,8 @@ dT = 0.2;
 % dT = 1;
 
 
-sN = 3000;
+% sN = 3000;
+sN = size(pose,2);
 pose = pose(:,1:sN);
 tS = timeStamp(1:sN)-timeStamp(1);
 tl = tS(end);
